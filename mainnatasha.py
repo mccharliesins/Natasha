@@ -42,7 +42,7 @@ microphone = sr.Microphone()
 
 # Capture live audio from the microphone indefinitely
 with microphone as source:
-    recognizer.adjust_for_ambient_noise(source,duration=2)
+    recognizer.adjust_for_ambient_noise(source,duration=1)
     print("Listening...")
 
     while True:
